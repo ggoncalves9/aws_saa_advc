@@ -1,76 +1,21 @@
 # Solutions Architect
 ### via ADVC (Cloud Faster Academy - Dan Rezende)
 
-## Roteiro de estudo para o exame SAA
-### Dicas para Certificação AWS Certified Solutions Architect ‒ Associate 11/09/2023
-### 68 recursos
-- AWS Data Exchange
-- Amazon EMR
-- Amazon Kinesis
-- AWS AppSync
-- Amazon SQS
-- Amazon SNS
-- AWS Step Functions
-- Amazon EC2
-- Amazon EC2 Auto Scaling
-- Amazon ECR
-- Amazon EKS
-- Amazon ECS
-- Amazon Aurora
-- Amazon DynamonDB
-- Amazon RDS
-- AWS X-Ray
-- AWS Amplify
-- Amazon API Gateway
-- AWS Device Farm
-- Amazon Comprehend
-- Amazon Kendra
-- Amazon Lex
-- Amazon Polly
-- Amazon Rekognition
-- Amazon SageMaker
-- Amazon Textract
-- Amazon Transcribe
-- Amazon Translate
-- AWS Auto Scaling
-- AWS CloudFormation
-- AWS CloudTrail
-- Amazon CloudWatch
-- Quando usar CloudTrail ou Amazon CloudWatch
-- AWS Config
-- AWS Control Tower
-- AWS Trusted Advisor
-- AWS Well Architected
-- Amazon CloudFront
-- Amazon ELB
-- Amazon Route 53
-- Amazon VPC
-- AWS Certificate Manager (ACM)
-- Amazon Detective
-- AWS Firewall Manager
-- Amazon GuardDuty
-- AWS IAM
-- Amazon Inspector
-- AWS Key Management Service (AWS KMS)
-- Amazon Macie
-- AWS Security Hub
-- AWS Shield
-- AWS WAF
-- AWS Fargate
-- AWS Lambda
-- Amazon EBS
-- Amazon S3
-- Amazon EFS
-- Quando usar Amazon S3 ou Amazon EFS
-- Amazon S3 Glacier
-- Amazon FSx
-- Amazon Athena
-- Amazon ElastiCache
-- AWS Compute Optimizer
-- Amazon Pinpoint
-- Amazon QuickSight
-- AWS Snowball
-- Amazon Redshift
-- Amazon CloudSearch
+### Agenda primeira gravação
+Fazer analise:
+- AWS well architect framework
+- DynamoDB, dabatabase NoSQL com alta disponibilidade.
+- Internet Gateway -  Toda tabela subnet é configurada no IG para saida para internet
+- NAT Gateway é utilizado na Public subnet para sair com conexão para acessos
+- Saber qual a rota de entrada e saida dos serviços
+- VPC endpoint para acesso entre serviços, exemplo: uma EC2 acessar DynamoDB dentro da AWS, sem passar pela internet pelo NAT gateway até o Endpoit do DynamoDB
+- Custo de dataTransfer - Analisar entrada/saida e seus custos
+- Endpoint Gateway de Internet integrado em S3 e DynamoDB free
+- OBS para o EXAME:
+    -  30% Design de arquitetura seguras; serviços de segurança
+    -  26% Design de arquiteturas resilientes; multiAz, serviços gerenciados, s3
+    -  24% Designde arquiteturas de alta performace; Como escala, auto scaling e balanceador de carga
+    -  20% Design de arquiteturas economicas; usar o AS para ficar eficiente, quebrar app em lambda, disco alterar para EFS, EBS e outros, saber analisar
 
-### Never Stop Study
+  - Vide Guia do EXAME
+
